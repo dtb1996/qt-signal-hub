@@ -141,9 +141,6 @@ QtSignalHub/
 │   │   ├── MessageRouter.h/.cpp
 │   │   └── MessageParser.h/.cpp
 │   │
-│   ├── settings/
-│   │   └── SettingsManager.h/.cpp
-│   │
 │   ├── workers/
 │   │   └── ParsingWorker.h/.cpp
 │   │
@@ -156,8 +153,7 @@ QtSignalHub/
 │   │   └── FeedView.qml
 │   │
 │   └── components/
-│       ├── MessageCard.qml
-│       └── StatusBadge.qml
+│       └── MessageCard.qml
 │
 ├── test_server.py
 ├── CMakeLists.txt
