@@ -11,18 +11,24 @@ Window {
     title: qsTr("Qt Signal Hub")
     color: "gray"
 
+    readonly property int contentMaxWidth: 750
+
     ColumnLayout {
         anchors.fill: parent
         spacing: 12
         anchors.margins: 12
 
         ConnectionView {
-            Layout.fillWidth: true;
+            Layout.fillWidth: true
+            Layout.maximumWidth: mainWindow.contentMaxWidth
+            Layout.alignment: Qt.AlignHCenter
         }
 
         FeedView {
-            Layout.fillWidth: true;
+            Layout.fillWidth: true
             Layout.fillHeight: true
+            Layout.maximumWidth: mainWindow.contentMaxWidth
+            Layout.alignment: Qt.AlignHCenter
             model: messageModel
         }
     }
