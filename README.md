@@ -248,7 +248,7 @@ WebSocket server running on ws://localhost:12345
 
 ## Purpose of the Project
 
-This project intentionally demonstrates:
+This project demonstrates:
 - Real-world Qt/C++ patterns used in production
 - Clean separation between UI and logic
 - Strong typing across C++ and QML
