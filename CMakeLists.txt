@@ -24,7 +24,7 @@ qt_add_qml_module(appQtSignalHub
         qml/views/FeedView.qml
         qml/views/ConnectionView.qml
         qml/components/MessageCard.qml
-        qml/components/StatusBadge.qml
+
     SOURCES
     src/app/AppController.h src/app/AppController.cpp
         src/app/AppState.h src/app/AppState.cpp
@@ -35,7 +35,7 @@ qt_add_qml_module(appQtSignalHub
         src/services/MessageParser.h src/services/MessageParser.cpp
         src/models/MessageFeedModel.h src/models/MessageFeedModel.cpp
         src/models/MessageItem.h
-        src/settings/SettingsManager.h src/settings/SettingsManager.cpp
+
         src/workers/ParsingWorker.h src/workers/ParsingWorker.cpp
         SOURCES src/network/ConnectionTypes.h
 )
