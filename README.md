@@ -194,8 +194,8 @@ QtSignalHub/
 **Build Instructions**
 1. Clone the repository:
 ```bash
-git clone https://github.com/dtb1996/qt-service-lab.git
-cd qt-service-lab
+git clone https://github.com/dtb1996/qt-signal-hub.git
+cd qt-signal-hub
 ```
 2. Open the project in Qt Creator:
     - `File → Open File or Project → select CMakeLists.txt`
