@@ -35,9 +35,8 @@ qt_add_qml_module(appQtSignalHub
         src/services/MessageParser.h src/services/MessageParser.cpp
         src/models/MessageFeedModel.h src/models/MessageFeedModel.cpp
         src/models/MessageItem.h
-
         src/workers/ParsingWorker.h src/workers/ParsingWorker.cpp
-        SOURCES src/network/ConnectionTypes.h
+        src/network/ConnectionTypes.h
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
