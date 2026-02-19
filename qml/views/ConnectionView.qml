@@ -13,10 +13,30 @@ Item {
         spacing: 12
 
         Text {
+            id: connectionStateText
             text: qsTr("Status: ") + appState.connectionStateText
             font.bold: true
-            color: appState.connectionState === Connection.State.Connected  ? "green"  :
-                   appState.connectionState === Connection.State.Connecting ? "orange" : "red"
+            color: "red"
+
+            states: [
+                State {
+                    name: "connected"
+                    when: appState.connectionState === Connection.State.Connected
+                    PropertyChanges {
+                        target: connectionStateText
+                        color: "green"
+                    }
+                },
+
+                State {
+                    name: "connecting"
+                    when: appState.connectionState === Connection.State.Connecting
+                    PropertyChanges {
+                        target: connectionStateText
+                        color: "orange"
+                    }
+                }
+            ]
         }
 
         Button {
