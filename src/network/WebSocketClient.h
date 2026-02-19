@@ -12,9 +12,9 @@ public:
     explicit WebSocketClient(const QUrl& url, QObject* parent = nullptr);
 
     void connectToHost() override;
-    void disconnectFromHost() override;    
+    void disconnectFromHost() override;
 
-private slots:
+private:
     void onConnected();
     void onDisconnected();
     void onTextMessageReceived(const QString& message);
