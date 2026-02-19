@@ -16,9 +16,10 @@ public:
     Connection::State state() const;
     Connection::Type activeProtocol() const;
 
-    Q_INVOKABLE void setProtocol(Connection::Type type);
-    Q_INVOKABLE void connect();
-    Q_INVOKABLE void disconnect();
+public slots:
+    void setProtocol(Connection::Type type);
+    void connect();
+    void disconnect();
 
 signals:
     void stateChanged();

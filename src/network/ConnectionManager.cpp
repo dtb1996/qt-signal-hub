@@ -4,7 +4,7 @@
 ConnectionManager::ConnectionManager(QObject *parent)
     : QObject(parent)
 {
-    m_client = nullptr;
+
 }
 
 Connection::State ConnectionManager::state() const
