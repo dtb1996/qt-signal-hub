@@ -26,7 +26,7 @@ qt_add_qml_module(appQtSignalHub
         qml/components/MessageCard.qml
 
     SOURCES
-    src/app/AppController.h src/app/AppController.cpp
+        src/app/AppController.h src/app/AppController.cpp
         src/app/AppState.h src/app/AppState.cpp
         src/network/ConnectionManager.h src/network/ConnectionManager.cpp
         src/network/IConnectionClient.h
@@ -35,7 +35,6 @@ qt_add_qml_module(appQtSignalHub
         src/services/MessageParser.h src/services/MessageParser.cpp
         src/models/MessageFeedModel.h src/models/MessageFeedModel.cpp
         src/models/MessageItem.h
-
         src/network/ConnectionTypes.h
 )
 
