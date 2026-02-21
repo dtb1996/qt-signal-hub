@@ -51,4 +51,4 @@ venv/
 env/
 .env/
 
-
+**/.qmlls.ini
